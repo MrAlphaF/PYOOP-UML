@@ -1,11 +1,13 @@
 import turtle
 t = turtle.Turtle()
 
-n=11
-angle = 180-(180/n)
-for _ in range(n):
-    t.forward(300)  
-    t.right(angle)    
+def draw_star(n, lenght):
 
+    angle = 180-(180/n)
+    for _ in range(n):
+        t.forward(lenght)  
+        t.right(angle)    
 
-turtle.done()
+    turtle.done()
+    
+draw_star(13,400)
